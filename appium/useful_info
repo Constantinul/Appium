@@ -12,3 +12,5 @@
 #understanding appium.automationName: https://appium.io/docs/en/writing-running-appium/caps/
 
 #mvn test -Dtest=<testName> -Dproperties=ios.properties
+
+#serenity related: https://github.com/serenity-bdd/serenity-core/issues/672
