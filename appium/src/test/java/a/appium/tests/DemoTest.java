@@ -38,8 +38,7 @@ public class DemoTest {
 		caps.setCapability("platformName", "iOS");
 		caps.setCapability("platformVersion", "11.2"); // Replace this with your iOS version
 		caps.setCapability("deviceName", "iPhone 8 Simulator"); // Replace this with your simulator/device version
-		caps.setCapability("app", "sauce-storage:UICatalog6.1.app.zip"); // Replace this with app path in your
-																			// system
+		caps.setCapability("app", "sauce-storage:UICatalog6.1.app.zip"); // Replace this with app path in your system
 		driver = new IOSDriver(
 				new URL("https://Tiberius:639dd645-e4b7-4bba-845b-8e5d8dfc2a78@ondemand.saucelabs.com/wd/hub"), caps);
 		driver.findElement(By.id("Buttons")).click();
