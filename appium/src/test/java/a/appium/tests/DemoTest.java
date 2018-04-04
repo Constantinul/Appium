@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import a.appium.steps.DemoSteps;
+import a.appium.scenarios.DemoTestScenarios;
 import io.appium.java_client.ios.IOSDriver;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -22,16 +22,14 @@ public class DemoTest {
 	public WebDriver webdriver;
 
 	@Steps
-	public DemoSteps demoSteps;
+	public DemoTestScenarios demoTestScenarios;
 
 	@Test
 	public void demoTest() {
-		demoSteps.clickOnButtons();
-		demoSteps.clickOnSomethingElse();
-
-		// demoSteps.clickOnTextFields();
-		// demoSteps.inserText();
+		demoTestScenarios.demoScenario();
 	}
+
+	// ---------------------------------- raw way -----------------------------------
 
 	private static IOSDriver driver;
 

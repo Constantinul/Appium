@@ -12,16 +12,16 @@ public class DemoPage extends MobilePageObject {
 	}
 
 	// @iOSFindBy(accessibility = "Buttons")
+	// @AndroidFindBy
+	// @FindBy
 	// private WebElement buttons;
 
 	public void clickOnButtons() {
 		waitForRenderedElements(By.id("Buttons"));
+		// MobileElement m = (MobileElement) getDriver().findElement(MobileBy.AccessibilityId("Buttons"));
 		MobileElement m = (MobileElement) getDriver().findElement(By.id("Buttons"));
 		m.click();
 		waitABit(5000);
-		// IOSDriver d = (IOSDriver) getDriver();
-		// TouchAction touchAction = new TouchAction(d);
-		// d.performTouchAction(TouchAction().)
 	}
 
 	public void clickOnSomethingElse() {
